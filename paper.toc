@@ -3,7 +3,7 @@
 \contentsline {chapter}{Abstract}{iv}{chapter*.4}% 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}% 
 \contentsline {section}{\numberline {1.1}Ether- and Ester-linked Phospholipids}{1}{section.1.1}% 
-\contentsline {section}{\numberline {1.2}Using Molecular Dynamics to Study Biological Membranes}{5}{section.1.2}% 
+\contentsline {section}{\numberline {1.2}Using Molecular Dynamics to Study Biological Membranes}{4}{section.1.2}% 
 \contentsline {chapter}{\numberline {2}Interaction of salt with ether- and ester-linked phospholipid bilayers}{8}{chapter.2}% 
 \contentsline {section}{\numberline {2.1}Methods}{8}{section.2.1}% 
 \contentsline {subsection}{\numberline {2.1.1}HOPC bilayer construction}{9}{subsection.2.1.1}% 

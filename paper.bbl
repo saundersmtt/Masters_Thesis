@@ -122,6 +122,11 @@ H.~I. Petrache, S.~Tristram-Nagle, D.~Harries, N.~Ku{\v{c}}erka, J.~F. Nagle,
   V.~A. Parsegian, Swelling of phospholipids by monovalent salt, Journal of
   lipid research 47~(2) (2006) 302--309.
 
+\bibitem{dror:2012:biomicroscope}
+R.~O. Dror, R.~M. Dirks, J.~Grossman, H.~Xu, D.~E. Shaw, Biomolecular
+  simulation: a computational microscope for molecular biology, Annual review
+  of biophysics 41 (2012) 429--452.
+
 \bibitem{tieleman:1997:memsim}
 D.~P. Tieleman, S.-J. Marrink, H.~J. Berendsen, A computer perspective of
   membranes: molecular dynamics studies of lipid bilayer systems, Biochimica et
@@ -143,6 +148,11 @@ J.~W. Ponder, C.~Wu, P.~Ren, V.~S. Pande, J.~D. Chodera, M.~J. Schnieders,
   status of the amoeba polarizable force field, The journal of physical
   chemistry B 114~(8) (2010) 2549--2564.
 
+\bibitem{chiu:2009}
+S.-W. Chiu, S.~A. Pandit, H.~Scott, E.~Jakobsson, An improved united atom force
+  field for simulation of mixed lipid bilayers, The Journal of Physical
+  Chemistry B 113~(9) (2009) 2748--2763.
+
 \bibitem{berger:1997}
 O.~Berger, O.~Edholm, F.~J{\"a}hnig, Molecular dynamics simulations of a fluid
   bilayer of dipalmitoylphosphatidylcholine at full hydration, constant
@@ -159,11 +169,6 @@ S.~Chiu, M.~Clark, E.~Jakobsson, S.~Subramaniam, H.~L. Scott, Optimization of
 S.~Chiu, S.~Vasudevan, E.~Jakobsson, R.~J. Mashl, H.~L. Scott, Structure of
   sphingomyelin bilayers: a simulation study, Biophysical journal 85~(6) (2003)
   3624--3635.
-
-\bibitem{chiu:2009}
-S.-W. Chiu, S.~A. Pandit, H.~Scott, E.~Jakobsson, An improved united atom force
-  field for simulation of mixed lipid bilayers, The Journal of Physical
-  Chemistry B 113~(9) (2009) 2748--2763.
 
 \bibitem{nagle:2000}
 J.~F. Nagle, S.~Tristram-Nagle, Structure of lipid bilayers, Biochimica et
@@ -197,11 +202,6 @@ S.-W. Chiu, M.~Clark, V.~Balaji, S.~Subramaniam, H.~L. Scott, E.~Jakobsson,
   Incorporation of surface tension into molecular dynamics simulation of an
   interface: a fluid phase lipid bilayer membrane, Biophysical journal 69~(4)
   (1995) 1230--1245.
-
-\bibitem{dror:2012:biomicroscope}
-R.~O. Dror, R.~M. Dirks, J.~Grossman, H.~Xu, D.~E. Shaw, Biomolecular
-  simulation: a computational microscope for molecular biology, Annual review
-  of biophysics 41 (2012) 429--452.
 
 \bibitem{abraham:2015}
 M.~J. Abraham, T.~Murtola, R.~Schulz, S.~P{\'a}ll, J.~C. Smith, B.~Hess,

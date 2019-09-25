@@ -39,12 +39,12 @@
 \titleformat
 {\chapter} % command
 [display] % shape
-{\sc\LARGE} % format
-{Chapter \thechapter} % label
+{\centering\sc\LARGE} % format
+{\centering Chapter \thechapter} % label
 {0.2ex} % sep
 {
 } % before-code
-\titlespacing*{\chapter}{0pt}{1in}{0pt}
+\titlespacing*{\chapter}{0pt}{1in}{0.25in}
 \titlespacing*{\section}{0pt}{0pt}{0pt}
 \hbadness=99999
 %\epstopdfDeclareGraphicsRule{.tga}{png}{.png}{
@@ -133,7 +133,7 @@ A distinguishing feature of Archaeal plasma membranes is that their phospholipid
 membranes where phospholipids primarily contain ester-links. In our work we examine the effects of
 salt on bilayer structure in the case of an ether-linked lipid bilayer. We use molecular dynamics simulations and compare equilibrium properties of two model lipid
 bilayers in NaCl salt solution --- POPC and its ether-linked analog that we refer to as HOPC. We make the following key observations.
-The headgroup region of HOPC ``adsorbs'' fewer ions compared to the headgroup region of POPC. Consistent with this,
+The headgroup region of HOPC~``adsorbs'' fewer ions compared to the headgroup region of POPC. Consistent with this,
 we note that the Debye screening length in the HOPC system is \about 10\% shorter than that
 in the POPC system. Herein, we introduce a protocol to identify the lipid-water interfacial boundary that
 reproduces the bulk salt distribution consistent with
@@ -167,16 +167,16 @@ of the structure~\cite{israelachvili:2011:intermol,ashrafuzzaman:2012:membrane}.
 An image of a bilayer of a commonly studied
 model lipid can be seen
 in figure~\ref{fig:boximage}.
-\begin{figure}[p]
+\begin{figure}[htp]
     \caption[Image of a model bilayer of phospholipids from a simulation.]{ Image of a model bilayer of phospholipids from a simulation. The lipids can be seen
 in the center of the image, with the hydrophobic chains colored in
 light purple. The polar headgroup can be seen highlighted by the phosphate group in orange and the choline nitrogen in blue
-facing the solvent. Solvent molecules have been removed for clairity. Figure generated
+facing the solvent. Solvent molecules have been removed for clarity. Figure generated
 using VMD~\cite{vmd}}
 \label{fig:boximage}
-\includegraphics[width=\textwidth]{images/popc_image}
+\includegraphics[height=0.25\textheight]{images/popc_image}
 \end{figure}
-In living cells, lipid bilayers act as the delimiter between the cell and the environment, acting as one of the major constituients of the cellular 
+In living cells, lipid bilayers act as the delimiter between the cell and the environment, acting as one of the major constituents of the cellular 
 plasma membrane~\cite{reece:2014:biobook}. The plasma membrane consists of a mixture of many lipid species, as
 well as proteins and lipid-like molecules, and the mixture is tuned by the cell to adapt the 
 structure and flexibility of the plasma membrane to different environments~\cite{pandit:2008:simulationtextbook,van:2008:lipidvariety,zhang:2008:memhomeo}. 
@@ -204,7 +204,7 @@ while they make up much of the phospholipids of archaeal membranes,
 These phospholipids differ from the more common ester-linked phospholipids of bacterial and 
 eukaryotic membranes in that they lack fatty acid carbonyl groups (see figure \ref{fig:struc}). 
 
-\begin{figure}[p]
+\begin{figure}[htp]
 \caption[Chemical structures of representative phospholipids highlighting the difference
 between ether- and ester-links.]{ 
 Chemical structures of representative phospholipids highlighting the difference 
@@ -212,7 +212,7 @@ between ether- and ester-links. POPC (1-palmitoyl-2-oleoyl-sn-glycero-3-phosphat
 diester lipid and HOPC (1-hexadecyl-2-(9-octadecenyl)-sn-glycero-3-phosphatidylcholine) is its diether analog that lacks fatty acid carbonyl groups.
 }
 \label{fig:struc}
-\includegraphics[height=0.66\textheight]{images/Structure_annotated}
+\includegraphics[height=0.5\textheight]{images/Structure_annotated}
 \end{figure}
 
 The chemical difference between ester- and ether-linked lipids has been shown to influence 
@@ -244,16 +244,18 @@ phospholipids compared to ester-linked remains a topic of interest.
 In order to explore the question of how ions interact with bilayers of ether- and ester-linked lipids, we utilize 
 Molecular Dynamics (MD) simulations.
 
-Computational methods like molecular often have to strike a balance between accuracy and computational feasibility --- approximations
-to the interactions in a system can significantly reduce computational cost, and if carefully done can still result in
-accurate reproduction of experimental results~\cite{pandit:2008:simulationtextbook}.
-
-Molecular dynamics approximates systems by treating particles classically. Particles are expressed as points in space, 
+%Computational methods like molecular dynamics often have to strike a balance between accuracy and computational feasibility.--- approximations
+%to the interactions in a system can significantly reduce computational cost, and if carefully done can still result in
+%accurate reproduction of experimental results~\cite{pandit:2008:simulationtextbook}.
+Computational methods like molecular dynamics must strike a balance between computational cost and accuracy. The most expensive
+computations using \emph{ab initio} methods with minimal approximations are the most accurate, but are only feasible for very small systems~\cite{dror:2012:biomicroscope}.
+For biologically relevant systems, a classical approximation is able to reproduce most important phenomena~\cite{pandit:2008:simulationtextbook,dror:2012:biomicroscope}..
+MD makes this classical approximation, expressing particles as points in space, 
 with masses centered at the nucleus~\cite{pandit:2008:simulationtextbook}.
-Functional forms and terms to calculate the potential energy of systems are defined in a force-field.
-Bonds and bond angles in molecules are modeled as harmonic potentials, and torisional parameters within molecules are modeled
+Functional forms and functional parameters needed to calculate the hamiltonian of systems are defined in a force-field.
+Bonds and bond angles are modeled as harmonic potentials, and torsional parameters within molecules are modeled
 using periodic functions. Non-bonded interactions
-are modeled using simple pairwise-additive potentials and in general do not treat many-body interactions~\cite{tieleman:1997:memsim,pandit:2008:simulationtextbook}. 
+are modeled using simple pairwise-additive potentials and generally do not treat many-body interactions~\cite{tieleman:1997:memsim,pandit:2008:simulationtextbook}. 
 Van der Waals (VdW) dispersion and hard-shell repulsion are usually treated using a Lennard-Jones 6-12 potential,
 and short-range electrostatics are represented by a coulomb potential~\cite{tieleman:1997:memsim,pandit:2008:simulationtextbook}.
 The potential terms are added together over the whole system of particles
@@ -270,9 +272,8 @@ Newton's laws of motion~\cite{frenkel:2001:molsimbook}. An example of the total 
 Most force-fields for molecular dynamics treat charges on particles in the system as an average picture of overall electronic behavior, as the
 timescale of electronic fluctuations is much smaller than the timescale of MD simulations; this means bonds are permanent,
 and average charge densities are fixed to particles~\cite{pandit:2008:simulationtextbook}.
-Some force fields treat electronic polarizability as an explicit term in the potential function~\cite{li:2017:drude,ponder:2010:current}; however in general
-MD force-fields do not include this in order to improve computation speed, and it has been found that
-~\cite{pandit:2008:simulationtextbook}.
+Some force fields treat electronic polarizability as an explicit term in the potential function~\cite{li:2017:drude,ponder:2010:current}; however
+most MD force-fields do not include this while still giving a good reproduction of experimental results~\cite{pandit:2008:simulationtextbook,chiu:2009,leonard:2018}.
 
 To ensure accurate reproduction of experimental results from complex systems, 
 force-fields are developed and optimized to directly reproduce experimental data
@@ -286,7 +287,7 @@ validate lipid simulations~\cite{pandit:2008:simulationtextbook,fogarty:2015,chi
 We can also look at electrostatic properties such as the bilayer electrostatic dipole potentials~\cite{gawrisch:1992,berkowitz:2006:aqueous}, or mechanical
 properties like bilayer compressibility or surface tension~\cite{kruczek:2017:ether,kruczek:2017,jahnig:1996:surface}.
 For optimization of force-fields using small molecules, experimental heats and enthalpies of vaporization, molecular volumes, 
-and densities of condensed phases can be usedv~\cite{berger:1997,chiu:1999:optimization,chiu:2003:structure,chiu:2009}.
+and densities of condensed phases can be used~\cite{berger:1997,chiu:1999:optimization,chiu:2003:structure,chiu:2009}.
 
 The earliest lipid simulations often used a united atom representation of the lipids, which simplified lipid chains by expressing carbon groups
 as beads rather than explicitly defining hydrogens~\cite{raghavan:1992,marrink:1993,egberts:1994}. These simulations focused on validation with experimental
@@ -300,7 +301,7 @@ by optimizing VdW parameters using molecular volumes and
 heats of vaporization in small hydrocarbon molecules to improve the acyl chains of DPPC~\cite{berger:1997},
 work that was continued by Chiu \etal~\cite{chiu:1999:optimization,chiu:2003:structure}, 
 Later, further optimization was carried out by Chiu \etal 
-in 2009 to improve torisional and VdW parameters using experimental 
+in 2009 to improve torsional and VdW parameters using experimental 
 heats of vaporization and densities, and validated
 the overall result by predicting small-angle x-ray scattering 
 results for model lipid bilayers to create the GROMOS 43-A1S3 lipid force field which gave excellent reproduction of SAXS form-factors for
@@ -495,7 +496,7 @@ Since such data is not available for our current lipid system as far as we know,
 %We have included this data in supplementary materials in case
 %a comparsion becomes possible in the future (see supplemental figure~\ref{supp:formfactor}).
 
-We also use the electron denisty distribution to calculate the peak-to-peak distance $D_{hh}$, 
+We also use the electron density distribution to calculate the peak-to-peak distance $D_{hh}$, 
 which is used another measure of the bilayer thickness. This is roughly reflective of the distance between the 
 electron-dense phosphate groups on either bilayer leaflet.
 
@@ -592,7 +593,7 @@ No values are shown for at distances less than $7.5$~\AA~from the bilayer center
 \includegraphics[height=0.66\textheight]{cood.eps}
 \end{figure}
 For this, we used a cutoff
-of 3.3~\AA, based on the radial distrubution functions of \na with the
+of 3.3~\AA, based on the radial distribution functions of \na with the
 various lipid oxygens (data not shown). When \na ions are bound, they are primarily coordinated by 
 phosphate oxygens --- this holds for both HOPC and POPC. The main difference between POPC and HOPC is 
 in how carbonyl oxygens, backbone oxygens, and water oxygens coordinate with ions. In POPC, ions are partially 
@@ -872,7 +873,7 @@ Note also that the form of $\psi_s$ is valid only for small surface potentials, 
 (See table~\ref{tab:gctheory}), 
 which will result in small surface potentials (See table~\ref{tab:gctheory}). 
 The surface charges are calculated by integrating 
-charge densitities of ions contained behind the surface. We chose to do this because all other parts of 
+charge densities of ions contained behind the surface. We chose to do this because all other parts of 
 the simulated system are uncharged, and the surface is entirely charged by the adsorbed ions.
 
 Figure~\ref{fig:gctheory} compares the potential and ion distribution 
@@ -882,7 +883,7 @@ obtained from theory against those estimated directly from simulations.
     \caption[Comparison of Gouy-Chapman theory predictions and simulation results.]{ 
 Comparison of Gouy-Chapman theory predictions and simulation results. Theoretical distributions are given by the 
 solid lines, and data from our simulations are shown as points with error bars. (a) and (c) show the electrostatic
-potentials of each system. For clairity, we show error-bars for the simulation
+potentials of each system. For clarity, we show error-bars for the simulation
 results for every 13th point. The Debye-Huckle 
 potentials shown follow the form given in equation~\ref{eq:gcpot}. (b) and (d) show the number density distribution
 of ions in each system. Error-bars for the 
@@ -909,8 +910,8 @@ flexibility and permeability of their membranes to extreme environments~\cite{ko
 
 In our work, we have found that ether-linked lipid bilayers show a distinct peak in solvent density
 that is not disrupted by the inclusion of a moderate concentration of salt. This region
-shows siginificantly reduced lateral diffusion, and longer autocorrelation times than the same
-region in an analgous ester-linked lipid bilayer. Furthermore, we find that
+shows significantly reduced lateral diffusion, and longer autocorrelation times than the same
+region in an analogous ester-linked lipid bilayer. Furthermore, we find that
 the characteristic lower dipole potential of an ether-linked bilayer reported in previous work~\cite{kruczek:2017:ether} is 
 increased to match that of the ester-linked bilayer in the presence of salt. We also find that,
 with our new protocol for determining the interface boundary of the lipid bilayer,
