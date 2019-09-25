@@ -2,6 +2,7 @@ LATEX_PATH    = $(shell if [[ "`hostname`" == *".cas.usf.edu" ]]; then echo "/us
 DVIPDF_PATH   = $(shell if ["`uname'" == "Linux" ]]; then echo ""; else echo "/usr/local/bin/"; fi)
 
 LATEX_CMD     = $(LATEX_PATH)latex
+PDFLATEX_CMD  = $(LATEX_PATH)pdflatex
 BIBTEX_CMD    = $(LATEX_PATH)bibtex
 DVIPDF_CMD    = $(DVI_PDF_PATH)dvipdf
 

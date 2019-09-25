@@ -1,0 +1,35 @@
+
+
+*******************************************************************************
+Mon Jun  4 12:15:12 2018
+
+
+FIT:    data read from './potential_aftermax' u 1:2:3
+        format = x:z:s
+        #datapoints = 145
+function used for fitting: f(x)
+	f(x)=A*exp(-k*x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   A             k            
+   0 5.2250792607e+03   0.00e+00  7.57e+00    1.000000e+00   1.000000e+00
+   7 2.7027976690e+01  -1.23e-02  7.57e-07    1.318096e+00   4.792523e+00
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 27.028
+rel. change during last iteration : -1.2258e-07
+
+degrees of freedom    (FIT_NDF)                        : 143
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.434749
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.189007
+p-value of the Chisq distribution (FIT_P)              : 1
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+A               = 1.3181           +/- 0.034        (2.579%)
+k               = 4.79252          +/- 0.1222       (2.551%)
+
+correlation matrix of the fit parameters:
+                A      k      
+A               1.000 
+k               0.705  1.000 

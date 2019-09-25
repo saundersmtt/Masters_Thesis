@@ -1,0 +1,37 @@
+# Load Global Definitions
+load 'settings.dem'
+
+dat_file='WaterAuto/100-105_water_acf.xvg'
+hopc_out=hopc_dir.'WaterAuto/fits.dat'
+popc_out=popc_dir.'WaterAuto/fits.dat'
+
+set print hopc_dir.'WaterAuto/acf_merge_fit.dat'
+
+A(a) = (1.0)/pi*(atan(a)+pi/2)
+B(b,a) = (1.0-A(a))/pi*(atan(b)+pi/2)
+C(b,a) = 1-A(a)-B(b,a)
+K(x) = sqrt(x*x)
+f(x)=A(a)*exp(-K(k1)*x)+B(b,a)*exp(-K(k2)*x)+C(b,a)*exp(-K(k3)*x)
+
+do for [i=10:50:2] {
+  a=-0.66
+  b=-0.66
+  k1=0.5
+  k2=0.05
+  k3=0.005
+  fit f(x) hopc_dir.'WaterAuto/acf_merge_'.i.'.dat' u 1:2 via k1,k2,k3,a,b
+  print sprintf("%f\t%f\t%f\t%f\t%f\t%f\t%f\t%f\t%f\t%f", i, A(a), 1/K(k1), k1_err/(k1*k1), B(b,a), 1/K(k2), k2_err/(k2*k2), C(b,a), 1/K(k3), k3_err/(k3*k3))
+}
+
+set print popc_dir.'WaterAuto/acf_merge_fit.dat'
+
+do for [i=10:50:2] {
+  a=-0.66
+  b=-0.66
+  k1=0.5
+  k2=0.05
+  k3=0.005
+  fit f(x) popc_dir.'WaterAuto/acf_merge_'.i.'.dat' u 1:2 via k1,k2,k3,a,b
+  print sprintf("%f\t%f\t%f\t%f\t%f\t%f\t%f\t%f\t%f\t%f", i, A(a), 1/K(k1), k1_err/(k1*k1), B(b,a), 1/K(k2), k2_err/(k2*k2), C(b,a), 1/K(k3), k3_err/(k3*k3))
+#  print sprintf("%f\t%f\t%f\t%f\t%f\t%f\t%f", i, A(a), 1/K(k1), B(b,a), 1/K(k2), C(b,a), 1/K(k3))
+}

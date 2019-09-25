@@ -1,0 +1,35 @@
+# Load Global Definitions
+load 'settings.dem'
+
+# Other Definitions
+areadhpc="/mnt/Scratch_1/Projects/etherlipidpaper/DHPC/Analysis_Sample/Box/area.dat"
+areadppc="/mnt/Scratch_1/Projects/etherlipidpaper/DPPC/Analysis_Sample/Box/area.dat"
+
+# Output
+set term png size 600, 400
+set output output_dir."dhpc_salt_area.png"
+
+set title "DHPC - Area Per Lipid" font ",20"
+set grid
+set style data points
+set xlabel "Time (FmS)"
+set ylabel "Area per Lipid"
+set yr [*:*]
+set xr [0:*]
+
+plot \
+     areadhpc u 1:2 w l title 'DHPC Sans Salt',\
+    
+set term png size 600, 400
+set output output_dir."dppc_salt_area.png"
+
+set title "DPPC - Area Per Lipid" font ",20"
+set grid
+set style data points
+set xlabel "Time (FmS)"
+set ylabel "Area per Lipid"
+set yr [*:*]
+set xr [0:*]
+
+plot \
+     areadppc u 1:2 w l title 'DPPC Sans Salt',\

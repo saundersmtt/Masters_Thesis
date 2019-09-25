@@ -1,19 +1,18 @@
 \contentsline {chapter}{List of Tables}{ii}{chapter*.2}% 
 \contentsline {chapter}{List of Figures}{iii}{chapter*.3}% 
-\contentsline {chapter}{Abstract}{vi}{chapter*.4}% 
+\contentsline {chapter}{Abstract}{iv}{chapter*.4}% 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}% 
 \contentsline {section}{\numberline {1.1}Ether- and Ester-linked Phospholipids}{1}{section.1.1}% 
-\contentsline {section}{\numberline {1.2}Using Molecular Dynamics to Study Biological Membranes?}{3}{section.1.2}% 
-\contentsline {chapter}{\numberline {2}MD simulation of the interaction of salt with ether- and ester-linked phospholipid bilayers}{4}{chapter.2}% 
-\contentsline {section}{\numberline {2.1}Methods}{4}{section.2.1}% 
-\contentsline {subsection}{\numberline {2.1.1}HOPC bilayer construction}{4}{subsection.2.1.1}% 
-\contentsline {subsection}{\numberline {2.1.2}Molecular dynamics}{5}{subsection.2.1.2}% 
-\contentsline {section}{\numberline {2.2}Results and Discussion}{6}{section.2.2}% 
-\contentsline {subsection}{\numberline {2.2.1}Bilayer Structure}{6}{subsection.2.2.1}% 
-\contentsline {subsection}{\numberline {2.2.2}Membrane-salt interactions}{9}{subsection.2.2.2}% 
-\contentsline {subsection}{\numberline {2.2.3}Water structure and dynamics}{10}{subsection.2.2.3}% 
-\contentsline {subsection}{\numberline {2.2.4}Bilayer electrostatics}{14}{subsection.2.2.4}% 
-\contentsline {subsection}{\numberline {2.2.5}Salt distribution at the bilayer-solvent interface}{15}{subsection.2.2.5}% 
-\contentsline {chapter}{\numberline {3}Conclusions}{29}{chapter.3}% 
-\contentsline {chapter}{Bibliography}{30}{chapter*.20}% 
-\contentsline {section}{\numberline {3.1}Supplemental Figures and Captions}{35}{section.3.1}% 
+\contentsline {section}{\numberline {1.2}Using Molecular Dynamics to Study Biological Membranes}{5}{section.1.2}% 
+\contentsline {chapter}{\numberline {2}Interaction of salt with ether- and ester-linked phospholipid bilayers}{8}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Methods}{8}{section.2.1}% 
+\contentsline {subsection}{\numberline {2.1.1}HOPC bilayer construction}{9}{subsection.2.1.1}% 
+\contentsline {subsection}{\numberline {2.1.2}Simulation Details}{9}{subsection.2.1.2}% 
+\contentsline {section}{\numberline {2.2}Results and Discussion}{10}{section.2.2}% 
+\contentsline {subsection}{\numberline {2.2.1}Bilayer Structure}{10}{subsection.2.2.1}% 
+\contentsline {subsection}{\numberline {2.2.2}Membrane-salt interactions}{15}{subsection.2.2.2}% 
+\contentsline {subsection}{\numberline {2.2.3}Water structure and dynamics}{18}{subsection.2.2.3}% 
+\contentsline {subsection}{\numberline {2.2.4}Bilayer electrostatics}{26}{subsection.2.2.4}% 
+\contentsline {subsection}{\numberline {2.2.5}Salt distribution at the bilayer-solvent interface}{28}{subsection.2.2.5}% 
+\contentsline {chapter}{\numberline {3}Conclusions}{33}{chapter.3}% 
+\contentsline {chapter}{Bibliography}{34}{chapter*.21}% 

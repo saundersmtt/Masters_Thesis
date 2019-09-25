@@ -1,0 +1,323 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{van:2008:lipidvariety}
+G.~Van~Meer, D.~R. Voelker, G.~W. Feigenson, Membrane lipids: where they are
+  and how they behave, Nature reviews Molecular cell biology 9~(2) (2008) 112.
+
+\bibitem{pandit:2008:simulationtextbook}
+S.~A. Pandit, H.~L. Scott, Simulations and models of lipid bilayers, in: Soft
+  Matter: Lipid Bilayers and Red Blood Cells, Vol.~4, Wiley Online Library,
+  2008, Ch.~1, pp. 1--82.
+
+\bibitem{israelachvili:2011:intermol}
+J.~N. Israelachvili, Intermolecular and surface forces, Academic press, 2011.
+
+\bibitem{ashrafuzzaman:2012:membrane}
+M.~Ashrafuzzaman, J.~A. Tuszynski, Membrane biophysics, Springer Science \&
+  Business Media, 2012.
+
+\bibitem{vmd}
+W.~Humphrey, A.~Dalke, K.~Schulten, {VMD} -- {V}isual {M}olecular {D}ynamics,
+  Journal of Molecular Graphics 14 (1996) 33--38.
+
+\bibitem{reece:2014:biobook}
+J.~B. Reece, L.~A. Urry, M.~L. Cain, S.~A. Wasserman, P.~V. Minorsky, R.~B.
+  Jackson, et~al., Campbell biology, no. s 1309, Pearson Boston, 2014.
+
+\bibitem{zhang:2008:memhomeo}
+Y.-M. Zhang, C.~O. Rock, Membrane lipid homeostasis in bacteria, Nature Reviews
+  Microbiology 6~(3) (2008) 222.
+
+\bibitem{sehgal:1962}
+S.~Sehgal, M.~Kates, N.~Gibbons, Lipids of halobacterium cutirubrum, Canadian
+  journal of biochemistry and physiology 40~(1) (1962) 69--81.
+
+\bibitem{koga:2014}
+Y.~Koga, From promiscuity to the lipid divide: on the evolution of distinct
+  membranes in archaea and bacteria, Journal of molecular evolution 78~(3-4)
+  (2014) 234--242.
+
+\bibitem{kates:1993:archealipids}
+M.~Kates, Membrane lipids of archaea, in: The biochemistry of archaea
+  (archaebacteria), Vol.~26, Elsevier, 1993, Ch.~9, pp. 261--295.
+
+\bibitem{guler:2009}
+S.~D. Guler, D.~D. Ghosh, J.~Pan, J.~C. Mathai, M.~L. Zeidel, J.~F. Nagle,
+  S.~Tristram-Nagle, Effects of ether vs. ester linkage on lipid bilayer
+  structure and water permeability, Chemistry and physics of lipids 160~(1)
+  (2009) 33--44.
+
+\bibitem{jansen:1995}
+M.~Jansen, A.~Blume, A comparative study of diffusive and osmotic water
+  permeation across bilayers composed of phospholipids with different head
+  groups and fatty acyl chains, Biophysical journal 68~(3) (1995) 997--1008.
+
+\bibitem{gawrisch:1992}
+K.~Gawrisch, D.~Ruston, J.~Zimmerberg, V.~Parsegian, R.~Rand, N.~Fuller,
+  Membrane dipole potentials, hydration forces, and the ordering of water at
+  membrane surfaces, Biophysical journal 61~(5) (1992) 1213--1223.
+
+\bibitem{haas:1990}
+N.~S. Haas, P.~Sripada, G.~G. Shipley, Effect of chain-linkage on the structure
+  of phosphatidyl choline bilayers. hydration studies of 1-hexadecyl
+  2-palmitoyl-sn-glycero-3-phosphocholine, Biophysical journal 57~(1) (1990)
+  117--124.
+
+\bibitem{fogarty:2015}
+J.~C. Fogarty, M.~Arjunwadkar, S.~A. Pandit, J.~Pan, Atomically detailed lipid
+  bilayer models for the interpretation of small angle neutron and x-ray
+  scattering data, Biochimica et Biophysica Acta (BBA)-Biomembranes 1848~(2)
+  (2015) 662--672.
+
+\bibitem{kruczek:2017:ether}
+J.~Kruczek, M.~Saunders, M.~Khosla, Y.~Tu, S.~A. Pandit, Molecular dynamics
+  simulations of ether-and ester-linked phospholipids, Biochimica et Biophysica
+  Acta (BBA)-Biomembranes 1859~(12) (2017) 2297--2307.
+
+\bibitem{leonard:2018}
+A.~N. Leonard, R.~W. Pastor, J.~B. Klauda, Parameterization of the charmm
+  all-atom force field for ether lipids and model linear ethers, The Journal of
+  Physical Chemistry B (2018).
+
+\bibitem{kruczek:2019}
+J.~Kruczek, S.-W. Chiu, S.~Varma, E.~Jakobsson, S.~A. Pandit, Interactions of
+  monovalent and divalent cations at palmitoyl-oleoyl-phosphatidylcholine
+  interface, Langmuir 35~(32) (2019) 10522--10532.
+
+\bibitem{kruczek:2017}
+J.~Kruczek, S.-W. Chiu, E.~Jakobsson, S.~A. Pandit,
+  \href{http://dx.doi.org/10.1021/acs.langmuir.6b04166}{Effects of lithium and
+  other monovalent ions on palmitoyl oleoyl phosphatidylcholine bilayer},
+  Langmuir 33~(4) (2017) 1105--1115, pMID: 28076953.
+\newblock \href
+  {http://arxiv.org/abs/http://dx.doi.org/10.1021/acs.langmuir.6b04166}
+  {\path{arXiv:http://dx.doi.org/10.1021/acs.langmuir.6b04166}}, \href
+  {https://doi.org/10.1021/acs.langmuir.6b04166}
+  {\path{doi:10.1021/acs.langmuir.6b04166}}.
+\newline\urlprefix\url{http://dx.doi.org/10.1021/acs.langmuir.6b04166}
+
+\bibitem{duro:2016}
+N.~Duro, M.~Gjika, A.~Siddiqui, H.~L. Scott, S.~Varma, Popc bilayers supported
+  on nanoporous substrates: specific effects of silica-type surface
+  hydroxylation and charge density, Langmuir 32~(26) (2016) 6766--6774.
+
+\bibitem{pabst:2007}
+G.~Pabst, A.~Hodzic, J.~{\v{S}}trancar, S.~Danner, M.~Rappolt, P.~Laggner,
+  Rigidification of neutral lipid bilayers in the presence of salts,
+  Biophysical journal 93~(8) (2007) 2688--2696.
+
+\bibitem{sachs:2004}
+J.~N. Sachs, H.~Nanda, H.~I. Petrache, T.~B. Woolf, Changes in
+  phosphatidylcholine headgroup tilt and water order induced by monovalent
+  salts: molecular dynamics simulations, Biophysical journal 86~(6) (2004)
+  3772--3782.
+
+\bibitem{petrache:2006:swelling}
+H.~I. Petrache, S.~Tristram-Nagle, D.~Harries, N.~Ku{\v{c}}erka, J.~F. Nagle,
+  V.~A. Parsegian, Swelling of phospholipids by monovalent salt, Journal of
+  lipid research 47~(2) (2006) 302--309.
+
+\bibitem{tieleman:1997:memsim}
+D.~P. Tieleman, S.-J. Marrink, H.~J. Berendsen, A computer perspective of
+  membranes: molecular dynamics studies of lipid bilayer systems, Biochimica et
+  Biophysica Acta (BBA)-Reviews on Biomembranes 1331~(3) (1997) 235--270.
+
+\bibitem{frenkel:2001:molsimbook}
+D.~Frenkel, B.~Smit, Understanding molecular simulation: from algorithms to
+  applications, Vol.~1, Elsevier, 2001.
+
+\bibitem{li:2017:drude}
+H.~Li, J.~Chowdhary, L.~Huang, X.~He, A.~D. MacKerell~Jr, B.~Roux, Drude
+  polarizable force field for molecular dynamics simulations of saturated and
+  unsaturated zwitterionic lipids, Journal of chemical theory and computation
+  13~(9) (2017) 4535--4552.
+
+\bibitem{ponder:2010:current}
+J.~W. Ponder, C.~Wu, P.~Ren, V.~S. Pande, J.~D. Chodera, M.~J. Schnieders,
+  I.~Haque, D.~L. Mobley, D.~S. Lambrecht, R.~A. DiStasio~Jr, et~al., Current
+  status of the amoeba polarizable force field, The journal of physical
+  chemistry B 114~(8) (2010) 2549--2564.
+
+\bibitem{berger:1997}
+O.~Berger, O.~Edholm, F.~J{\"a}hnig, Molecular dynamics simulations of a fluid
+  bilayer of dipalmitoylphosphatidylcholine at full hydration, constant
+  pressure, and constant temperature, Biophysical journal 72~(5) (1997)
+  2002--2013.
+
+\bibitem{chiu:1999:optimization}
+S.~Chiu, M.~Clark, E.~Jakobsson, S.~Subramaniam, H.~L. Scott, Optimization of
+  hydrocarbon chain interaction parameters: application to the simulation of
+  fluid phase lipid bilayers, The Journal of Physical Chemistry B 103~(30)
+  (1999) 6323--6327.
+
+\bibitem{chiu:2003:structure}
+S.~Chiu, S.~Vasudevan, E.~Jakobsson, R.~J. Mashl, H.~L. Scott, Structure of
+  sphingomyelin bilayers: a simulation study, Biophysical journal 85~(6) (2003)
+  3624--3635.
+
+\bibitem{chiu:2009}
+S.-W. Chiu, S.~A. Pandit, H.~Scott, E.~Jakobsson, An improved united atom force
+  field for simulation of mixed lipid bilayers, The Journal of Physical
+  Chemistry B 113~(9) (2009) 2748--2763.
+
+\bibitem{nagle:2000}
+J.~F. Nagle, S.~Tristram-Nagle, Structure of lipid bilayers, Biochimica et
+  Biophysica Acta (BBA)-Reviews on Biomembranes 1469~(3) (2000) 159--195.
+
+\bibitem{berkowitz:2006:aqueous}
+M.~L. Berkowitz, D.~L. Bostick, S.~Pandit, Aqueous solutions next to
+  phospholipid membrane surfaces: insights from simulations, Chemical reviews
+  106~(4) (2006) 1527--1539.
+
+\bibitem{jahnig:1996:surface}
+F.~J{\"a}hnig, What is the surface tension of a lipid bilayer membrane?,
+  Biophysical journal 71~(3) (1996) 1348--1349.
+
+\bibitem{raghavan:1992}
+K.~Raghavan, M.~R. Reddy, M.~L. Berkowitz, A molecular dynamics study of the
+  structure and dynamics of water between dilauroylphosphatidylethanolamine
+  bilayers, Langmuir 8~(1) (1992) 233--240.
+
+\bibitem{marrink:1993}
+S.~J. Marrink, M.~Berkowitz, H.~J. Berendsen, Molecular dynamics simulation of
+  a membrane/water interface: the ordering of water and its relation to the
+  hydration force, Langmuir 9~(11) (1993) 3122--3131.
+
+\bibitem{egberts:1994}
+E.~Egberts, S.-J. Marrink, H.~J. Berendsen, Molecular dynamics simulation of a
+  phospholipid membrane, European biophysics journal 22~(6) (1994) 423--436.
+
+\bibitem{chiu:1995:incorporation}
+S.-W. Chiu, M.~Clark, V.~Balaji, S.~Subramaniam, H.~L. Scott, E.~Jakobsson,
+  Incorporation of surface tension into molecular dynamics simulation of an
+  interface: a fluid phase lipid bilayer membrane, Biophysical journal 69~(4)
+  (1995) 1230--1245.
+
+\bibitem{dror:2012:biomicroscope}
+R.~O. Dror, R.~M. Dirks, J.~Grossman, H.~Xu, D.~E. Shaw, Biomolecular
+  simulation: a computational microscope for molecular biology, Annual review
+  of biophysics 41 (2012) 429--452.
+
+\bibitem{abraham:2015}
+M.~J. Abraham, T.~Murtola, R.~Schulz, S.~P{\'a}ll, J.~C. Smith, B.~Hess,
+  E.~Lindahl, Gromacs: High performance molecular simulations through
+  multi-level parallelism from laptops to supercomputers, SoftwareX 1 (2015)
+  19--25.
+
+\bibitem{pall:2014}
+S.~Pall, M.~J. Abraham, C.~Kutzner, B.~Hess, E.~Lindahl, Tackling exascale
+  software challenges in molecular dynamics simulations with gromacs, in:
+  International Conference on Exascale Applications and Software, Springer,
+  2014, pp. 3--27.
+
+\bibitem{van:2005}
+D.~V.~D. Spoel, E.~Lindahl, B.~Hess, G.~Groenhof, A.~Mark, H.~Berendsen,
+  Gromacs: fast, flexible, free, J. Comput. Chem. 26 (2005) 1701.
+
+\bibitem{lindahl:2001}
+E.~Lindahl, B.~Hess, D.~Van Der~Spoel, Gromacs 3.0: a package for molecular
+  simulation and trajectory analysis, Molecular modeling annual 7~(8) (2001)
+  306--317.
+
+\bibitem{berendsen:1995}
+H.~J. Berendsen, D.~van~der Spoel, R.~van Drunen, Gromacs: a message-passing
+  parallel molecular dynamics implementation, Computer Physics Communications
+  91~(1-3) (1995) 43--56.
+
+\bibitem{spce}
+H.~Berendsen, J.~Grigera, T.~Straatsma, The missing term in effective pair
+  potentials, Journal of Physical Chemistry 91~(24) (1987) 6269--6271.
+
+\bibitem{joung:2008}
+I.~S. Joung, T.~E. Cheatham~III, Determination of alkali and halide monovalent
+  ion parameters for use in explicitly solvated biomolecular simulations, The
+  journal of physical chemistry B 112~(30) (2008) 9020--9041.
+
+\bibitem{nose:1983}
+S.~Nos{\'e}, M.~Klein, Constant pressure molecular dynamics for molecular
+  systems, Molecular Physics 50~(5) (1983) 1055--1076.
+
+\bibitem{parrinello:1981}
+M.~Parrinello, A.~Rahman, Polymorphic transitions in single crystals: A new
+  molecular dynamics method, Journal of Applied physics 52~(12) (1981)
+  7182--7190.
+
+\bibitem{lincs}
+B.~Hess, H.~Bekker, H.~J.~C. Berendsen, J.~G. E.~M. Fraaije,
+  \href{http://dx.doi.org/10.1002/(SICI)1096-987X(199709)18:12<1463::AID-JCC4>3.0.CO;2-H}{Lincs:
+  A linear constraint solver for molecular simulations}, Journal of
+  Computational Chemistry 18~(12) (1997) 1463--1472.
+\newblock \href
+  {https://doi.org/10.1002/(SICI)1096-987X(199709)18:12<1463::AID-JCC4>3.0.CO;2-H}
+  {\path{doi:10.1002/(SICI)1096-987X(199709)18:12<1463::AID-JCC4>3.0.CO;2-H}}.
+\newline\urlprefix\url{http://dx.doi.org/10.1002/(SICI)1096-987X(199709)18:12<1463::AID-JCC4>3.0.CO;2-H}
+
+\bibitem{essmann:1995}
+U.~Essmann, L.~Perera, M.~L. Berkowitz, T.~Darden, H.~Lee, L.~G. Pedersen, A
+  smooth particle mesh ewald method, The Journal of chemical physics 103~(19)
+  (1995) 8577--8593.
+
+\bibitem{petrache:1997}
+H.~I. Petrache, S.~E. Feller, J.~F. Nagle,
+  \href{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1184418/}{Determination of
+  component volumes of lipid bilayers from simulations.}, Biophysical Journal
+  72~(5) (1997) 2237--2242.
+\newline\urlprefix\url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1184418/}
+
+\bibitem{egberts:1988}
+E.~Egberts, H.~Berendsen, Molecular dynamics simulation of a smectic liquid
+  crystal with atomic detail, The Journal of chemical physics 89~(6) (1988)
+  3718--3732.
+
+\bibitem{douliez:1995}
+J.-P. Douliez, A.~Leonard, E.~J. Dufourc, Restatement of order parameters in
+  biomembranes: calculation of cc bond order parameters from cd quadrupolar
+  splittings., Biophysical journal 68~(5) (1995) 1727.
+
+\bibitem{varma:2008:JACS}
+S.~Varma, S.~B. Rempe, Structural transitions in ion coordination driven by
+  changes in competition for ligand binding, Journal of the American Chemical
+  Society 130~(46) (2008) 15405--15419.
+
+\bibitem{aaman:2003}
+K.~{\AA}man, E.~Lindahl, O.~Edholm, P.~H{\aa}kansson, P.-O. Westlund, Structure
+  and dynamics of interfacial water in an l $\alpha$ phase lipid bilayer from
+  molecular dynamics simulations, Biophysical journal 84~(1) (2003) 102--115.
+
+\bibitem{dutta:2014}
+P.~Dutta, M.~Botlani, S.~Varma, Water dynamics at protein--protein interfaces:
+  Molecular dynamics study of virus--host receptor complexes, The Journal of
+  Physical Chemistry B 118~(51) (2014) 14795--14807.
+
+\bibitem{Berkowitz:2006}
+M.~L. Berkowitz, D.~L. Bostick, S.~Pandit, Aqueous solutions next to
+  phospholipid membrane surfaces: insights from simulations, Chemical reviews
+  106~(4) (2006) 1527--1539.
+
+\bibitem{Cordomi:2008}
+A.~Cordomi, O.~Edholm, J.~J. Perez, Effect of ions on a dipalmitoyl
+  phosphatidylcholine bilayer. a molecular dynamics simulation study, The
+  Journal of Physical Chemistry B 112~(5) (2008) 1397--1408.
+
+\bibitem{wiersema:1966}
+P.~Wiersema, A.~Loeb, J.~T.~G. Overbeek, Calculation of the electrophoretic
+  mobility of a spherical colloid particle, Journal of Colloid and Interface
+  Science 22~(1) (1966) 78--99.
+
+\bibitem{o:1978:electrophoretic}
+R.~W. O'Brien, L.~R. White, Electrophoretic mobility of a spherical colloidal
+  particle, Journal of the Chemical Society, Faraday Transactions 2: Molecular
+  and Chemical Physics 74 (1978) 1607--1626.
+
+\bibitem{valentine:2007}
+D.~L. Valentine, \href{http://dx.doi.org/10.1038/nrmicro1619}{Adaptations to
+  energy stress dictate the ecology and evolution of the archaea}, Nat Rev
+  Micro 5~(4) (2007) 316--323.
+\newline\urlprefix\url{http://dx.doi.org/10.1038/nrmicro1619}
+
+\end{thebibliography}

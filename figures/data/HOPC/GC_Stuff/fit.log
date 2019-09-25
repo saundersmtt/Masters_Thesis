@@ -1,0 +1,30 @@
+
+
+*******************************************************************************
+Mon Aug 27 11:14:34 2018
+
+
+FIT:    data read from 'testing_Cl_Dens.dat' u 1:2:3
+        format = x:z:s
+        x range restricted to [-4.00000 : 4.00000]
+        #datapoints = 373
+function used for fitting: f(x)
+	f(x)=s
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   s            
+   0 1.7936083585e+06   0.00e+00  7.38e+01    1.000000e+00
+   3 2.7236195196e+01  -3.38e-05  7.38e-02    6.046239e-02
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 27.2362
+rel. change during last iteration : -3.38369e-10
+
+degrees of freedom    (FIT_NDF)                        : 372
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.270584
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0732156
+p-value of the Chisq distribution (FIT_P)              : 1
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+s               = 0.0604624        +/- 0.0001898    (0.314%)

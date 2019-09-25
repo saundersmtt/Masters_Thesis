@@ -1,0 +1,70 @@
+
+
+*******************************************************************************
+Mon Jun  4 11:54:59 2018
+
+
+FIT:    data read from './potential_aftermax' u 1:2:3
+        format = x:z:s
+        #datapoints = 148
+function used for fitting: f(x)
+	f(x)=A*exp(-k*x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   A             k            
+   0 6.6691066365e+03   0.00e+00  9.02e+00    1.000000e+00   1.000000e+00
+   7 2.5337749261e+01   0.00e+00  9.02e+03    1.105504e+00   3.958906e+00
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 25.3377
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 146
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.416589
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.173546
+p-value of the Chisq distribution (FIT_P)              : 1
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+A               = 1.1055           +/- 0.0324       (2.93%)
+k               = 3.95891          +/- 0.08855      (2.237%)
+
+correlation matrix of the fit parameters:
+                A      k      
+A               1.000 
+k               0.704  1.000 
+
+
+*******************************************************************************
+Mon Jun  4 12:33:59 2018
+
+
+FIT:    data read from './potential_aftermax' u 1:2:3
+        format = x:z:s
+        #datapoints = 148
+function used for fitting: f(x)
+	f(x)=A*exp(-k*x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   A             k            
+   0 6.6691066365e+03   0.00e+00  9.02e+00    1.000000e+00   1.000000e+00
+   7 2.5337749261e+01   0.00e+00  9.02e+03    1.105504e+00   3.958906e+00
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 25.3377
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 146
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.416589
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.173546
+p-value of the Chisq distribution (FIT_P)              : 1
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+A               = 1.1055           +/- 0.0324       (2.93%)
+k               = 3.95891          +/- 0.08855      (2.237%)
+
+correlation matrix of the fit parameters:
+                A      k      
+A               1.000 
+k               0.704  1.000 

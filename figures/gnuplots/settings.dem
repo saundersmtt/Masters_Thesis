@@ -1,0 +1,23 @@
+# Global Definitions
+set encoding utf8
+output_dir="../" #/Volumes/Scratch/Documents/etherlipidsalt/"
+project_dir="../data/" #"/mnt/Scratch_1/Projects/etherlipidsalt/"
+paper_dir="../" #"/Volumes/Scratch/Documents/etherlipidsalt/Paper/"
+hopc_dir=project_dir."HOPC/" #"HOPC/Analysis_Sample/"
+popc_dir=project_dir."POPC/" #"POPC/Analysis_Sample/"
+
+#Defining Custom Linestyles
+
+set style line 1 lt 1 lc rgb "orange" lw 3 pt  1
+set style line 10 lt 2 dt 2 lc rgb "orange" lw 3 pt  1
+set style line 2 lt 1 lc rgb "blue" lw 3 pt  1
+set style line 3 lt 1 lc rgb "black" lw 3 pt 1
+set style line 30 lt 2 dt 2 lc rgb "black" lw 3 pt 1
+set style line 4 lt 1 lc rgb "#228B22" lw 3 pt 1
+set style line 5 lt 1 lc rgb "red" lw 3 pt  1 
+set style line 6 lt 1 lc rgb "#800000" lw 3 pt  1
+set style line 7 lt 1 lc rgb "0xACC4ED" lw 3 pt 1
+set style line 70 lt 2 dt 2 lc rgb "0xACC4ED" lw 3 pt 1
+set key opaque top
+set border back
+

@@ -1,0 +1,379 @@
+
+
+*******************************************************************************
+Fri Jul  6 11:18:49 2018
+
+
+FIT:    data read from 'ave_number_150ns.dat' u 1:6
+        format = x:z
+        #datapoints = 1023
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a*exp(-K(x))
+	K(x)=x
+BREAK: Need via and either parameter list or file
+
+*******************************************************************************
+Fri Jul  6 11:19:00 2018
+
+
+FIT:    data read from 'ave_number_150ns.dat' u 1:6:7
+        format = x:z:s
+
+Current data point
+=========================
+#               = 1 out of 1023
+x               = -10.9865       
+z               = 0              
+s               = 0              
+
+BREAK: Zero error value in data file
+
+*******************************************************************************
+Fri Jul  6 11:19:21 2018
+
+
+FIT:    data read from 'ave_number_150ns.dat' u 1:6:7
+        format = x:z:s
+
+Current data point
+=========================
+#               = 1 out of 1023
+x               = -10.9865       
+z               = 0              
+s               = 0              
+
+BREAK: Zero error value in data file
+
+*******************************************************************************
+Fri Jul  6 11:19:28 2018
+
+
+FIT:    data read from 'ave_number_150ns.dat' u 1:6
+        format = x:z
+        #datapoints = 1023
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a*exp(-K(x))
+	K(x)=x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             x            
+   0 2.0726539484e+10   0.00e+00  3.18e+03    5.000000e-01   1.000000e-01
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Fri Jul  6 11:19:34 2018
+
+
+FIT:    data read from 'ave_number_150ns.dat' u 1:6
+        format = x:z
+        #datapoints = 1023
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a*exp(-K(x))
+	K(x)=x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             x            
+   0 4.9439001259e+01   0.00e+00  4.69e-03    7.368451e-07   1.000000e-01
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Fri Jul  6 11:19:40 2018
+
+
+FIT:    data read from 'ave_number_150ns.dat' u 1:6
+        format = x:z
+        #datapoints = 1023
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a*exp(-K(x))
+	K(x)=x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             x            
+   0 4.9439001259e+01   0.00e+00  4.69e-03    7.368451e-07   1.000000e-03
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Fri Jul  6 11:20:52 2018
+
+
+FIT:    data read from 'ave_number_150ns.dat' u 1:6
+        format = x:z
+        #datapoints = 1023
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a*exp(-K(x))
+	K(x)=x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             x            
+   0 4.9439001259e+01   0.00e+00  4.69e-03    7.368451e-07   6.000000e-01
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Fri Jul  6 11:20:59 2018
+
+
+FIT:    data read from 'ave_number_150ns.dat' u 1:6
+        format = x:z
+        #datapoints = 1023
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a*exp(-K(x))
+	K(x)=x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             x            
+   0 4.9439001259e+01   0.00e+00  4.69e-03    7.368451e-07  -6.000000e-01
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Fri Jul  6 11:21:11 2018
+
+
+FIT:    data read from 'ave_number_150ns.dat' u 1:6
+        format = x:z
+        #datapoints = 1023
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a*exp(-K(x))+b
+	K(x)=x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             x             b            
+   0 8.9575860675e+02   0.00e+00  5.77e-01    7.368451e-07  -6.006000e-01   1.000000e+00
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Fri Jul  6 11:21:16 2018
+
+
+FIT:    data read from 'ave_number_150ns.dat' u 1:6
+        format = x:z
+        #datapoints = 1023
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a*exp(-K(x))+b
+	K(x)=x
+fitted parameters initialized with current variable values
+
+Warning: Initial value of parameter 'b' is zero.
+iter      chisq       delta/lim  lambda   a             x             b            
+   0 5.0278430635e+01   0.00e+00  1.27e-02   -2.445139e-06  -6.006000e-01   1.000000e-30
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Fri Jul  6 11:21:24 2018
+
+
+FIT:    data read from 'ave_number_150ns.dat' u 1:6:7
+        format = x:z:s
+
+Current data point
+=========================
+#               = 1 out of 1023
+x               = -10.9865       
+z               = 0              
+s               = 0              
+
+BREAK: Zero error value in data file
+
+*******************************************************************************
+Fri Jul  6 11:21:27 2018
+
+
+FIT:    data read from 'ave_number_150ns.dat' u 1:6
+        format = x:z
+        #datapoints = 1023
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a*exp(-K(x))+b
+	K(x)=x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             x             b            
+   0 4.9439001259e+01   0.00e+00  3.83e-03    7.368451e-07  -6.006000e-01   1.001000e-30
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Fri Jul  6 11:21:45 2018
+
+
+FIT:    data read from 'ave_number_150ns.dat' u 1:6
+        format = x:z
+        #datapoints = 1023
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a*exp(-x)+b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             x             b            
+   0 4.9439001259e+01   0.00e+00  3.83e-03    7.368451e-07  -6.006000e-01   1.002001e-30
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Fri Jul  6 11:22:04 2018
+
+
+FIT:    data read from 'ave_number_150ns.dat' u 1:6
+        format = x:z
+        #datapoints = 1023
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a*exp(-x)+b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   x             b            
+   0 2.0726539484e+10   0.00e+00  0.00e+00   -6.006000e-01   1.003003e-30
+BREAK: Singular matrix in Givens()
+
+*******************************************************************************
+Fri Jul  6 11:22:12 2018
+
+
+FIT:    data read from 'ave_number_150ns.dat' u 1:6
+        format = x:z
+        #datapoints = 1023
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a*exp(-x)+b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   x             b            
+   0 2.0726542261e+10   0.00e+00  7.07e-04   -6.006000e-01   1.000000e-03
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Fri Jul  6 11:22:19 2018
+
+
+FIT:    data read from 'ave_number_150ns.dat' u 1:6
+        format = x:z
+        #datapoints = 1023
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a*exp(-x)+b
+fitted parameters initialized with current variable values
+
+Warning: Initial value of parameter 'x' is zero.
+iter      chisq       delta/lim  lambda   x             b            
+   0 1.8842006546e+10   0.00e+00  9.61e+02    1.000000e-30  -1.358621e+03
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Fri Jul  6 11:22:34 2018
+
+
+FIT:    data read from 'ave_number_150ns.dat' u 1:6
+        format = x:z
+        #datapoints = 1023
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a*exp(-x)+b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   b            
+   0 1.8842006548e+10   0.00e+00  1.36e+03   -1.358622e+03
+   1 1.8842004661e+10  -1.00e-02  1.36e+02   -1.357265e+03
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 1.8842e+10
+rel. change during last iteration : -1.00115e-07
+
+degrees of freedom    (FIT_NDF)                        : 1022
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 4293.76
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.84364e+07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+b               = -1357.27         +/- 134.2        (9.891%)
+
+
+*******************************************************************************
+Fri Jul  6 11:24:36 2018
+
+
+FIT:    data read from 'ave_number_150ns.dat' u 1:6
+        format = x:z
+        #datapoints = 1023
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a*exp(-K(x))+b
+	K(x)=x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   b             x             a            
+   0 8.2911835092e+10   0.00e+00  5.20e+03    1.000000e+00   1.000000e+00   1.000000e+00
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Fri Jul  6 11:24:39 2018
+
+
+FIT:    data read from 'ave_number_150ns.dat' u 1:6
+        format = x:z
+        #datapoints = 1023
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a*exp(-K(x))+b
+	K(x)=x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   b             x            
+   0 4.1047371998e+01   0.00e+00  6.72e-02    9.499220e-02   1.000000e+00
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Fri Jul  6 11:24:40 2018
+
+
+FIT:    data read from 'ave_number_150ns.dat' u 1:6
+        format = x:z
+        #datapoints = 1023
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a*exp(-K(x))+b
+	K(x)=x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   b             a            
+   0 4.1047371953e+01   0.00e+00  6.90e-02    9.499884e-02  -2.447584e-06
+   1 4.1047371502e+01  -1.10e-03  6.90e-03    9.499227e-02  -2.445165e-06
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 41.0474
+rel. change during last iteration : -1.09763e-08
+
+degrees of freedom    (FIT_NDF)                        : 1021
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.200507
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0402031
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+b               = 0.0949923        +/- 0.006575     (6.922%)
+a               = -2.44516e-06     +/- 7.304e-07    (29.87%)
+
+correlation matrix of the fit parameters:
+                b      a      
+b               1.000 
+a              -0.302  1.000 
