@@ -5,6 +5,11 @@
 \expandafter\ifx\csname href\endcsname\relax
   \def\href#1#2{#2} \def\path#1{#1}\fi
 
+\bibitem{saunders:2019}
+M.~Saunders, M.~Steele, W.~Lavigne, S.~Varma, S.~A. Pandit, Interaction of salt
+  with ether-and ester-linked phospholipid bilayers, Biochimica et Biophysica
+  Acta (BBA)-Biomembranes 1861~(5) (2019) 907--915.
+
 \bibitem{van:2008:lipidvariety}
 G.~Van~Meer, D.~R. Voelker, G.~W. Feigenson, Membrane lipids: where they are
   and how they behave, Nature reviews Molecular cell biology 9~(2) (2008) 112.
@@ -20,10 +25,6 @@ J.~N. Israelachvili, Intermolecular and surface forces, Academic press, 2011.
 \bibitem{ashrafuzzaman:2012:membrane}
 M.~Ashrafuzzaman, J.~A. Tuszynski, Membrane biophysics, Springer Science \&
   Business Media, 2012.
-
-\bibitem{vmd}
-W.~Humphrey, A.~Dalke, K.~Schulten, {VMD} -- {V}isual {M}olecular {D}ynamics,
-  Journal of Molecular Graphics 14 (1996) 33--38.
 
 \bibitem{reece:2014:biobook}
 J.~B. Reece, L.~A. Urry, M.~L. Cain, S.~A. Wasserman, P.~V. Minorsky, R.~B.
@@ -93,12 +94,7 @@ J.~Kruczek, S.-W. Chiu, S.~Varma, E.~Jakobsson, S.~A. Pandit, Interactions of
 J.~Kruczek, S.-W. Chiu, E.~Jakobsson, S.~A. Pandit,
   \href{http://dx.doi.org/10.1021/acs.langmuir.6b04166}{Effects of lithium and
   other monovalent ions on palmitoyl oleoyl phosphatidylcholine bilayer},
-  Langmuir 33~(4) (2017) 1105--1115, pMID: 28076953.
-\newblock \href
-  {http://arxiv.org/abs/http://dx.doi.org/10.1021/acs.langmuir.6b04166}
-  {\path{arXiv:http://dx.doi.org/10.1021/acs.langmuir.6b04166}}, \href
-  {https://doi.org/10.1021/acs.langmuir.6b04166}
-  {\path{doi:10.1021/acs.langmuir.6b04166}}.
+  Langmuir 33~(4) (2017) 1105--1115.
 \newline\urlprefix\url{http://dx.doi.org/10.1021/acs.langmuir.6b04166}
 
 \bibitem{duro:2016}
@@ -203,6 +199,11 @@ S.-W. Chiu, M.~Clark, V.~Balaji, S.~Subramaniam, H.~L. Scott, E.~Jakobsson,
   interface: a fluid phase lipid bilayer membrane, Biophysical journal 69~(4)
   (1995) 1230--1245.
 
+\bibitem{joung:2008}
+I.~S. Joung, T.~E. Cheatham~III, Determination of alkali and halide monovalent
+  ion parameters for use in explicitly solvated biomolecular simulations, The
+  journal of physical chemistry B 112~(30) (2008) 9020--9041.
+
 \bibitem{abraham:2015}
 M.~J. Abraham, T.~Murtola, R.~Schulz, S.~P{\'a}ll, J.~C. Smith, B.~Hess,
   E.~Lindahl, Gromacs: High performance molecular simulations through
@@ -233,11 +234,6 @@ H.~J. Berendsen, D.~van~der Spoel, R.~van Drunen, Gromacs: a message-passing
 H.~Berendsen, J.~Grigera, T.~Straatsma, The missing term in effective pair
   potentials, Journal of Physical Chemistry 91~(24) (1987) 6269--6271.
 
-\bibitem{joung:2008}
-I.~S. Joung, T.~E. Cheatham~III, Determination of alkali and halide monovalent
-  ion parameters for use in explicitly solvated biomolecular simulations, The
-  journal of physical chemistry B 112~(30) (2008) 9020--9041.
-
 \bibitem{nose:1983}
 S.~Nos{\'e}, M.~Klein, Constant pressure molecular dynamics for molecular
   systems, Molecular Physics 50~(5) (1983) 1055--1076.
@@ -252,9 +248,6 @@ B.~Hess, H.~Bekker, H.~J.~C. Berendsen, J.~G. E.~M. Fraaije,
   \href{http://dx.doi.org/10.1002/(SICI)1096-987X(199709)18:12<1463::AID-JCC4>3.0.CO;2-H}{Lincs:
   A linear constraint solver for molecular simulations}, Journal of
   Computational Chemistry 18~(12) (1997) 1463--1472.
-\newblock \href
-  {https://doi.org/10.1002/(SICI)1096-987X(199709)18:12<1463::AID-JCC4>3.0.CO;2-H}
-  {\path{doi:10.1002/(SICI)1096-987X(199709)18:12<1463::AID-JCC4>3.0.CO;2-H}}.
 \newline\urlprefix\url{http://dx.doi.org/10.1002/(SICI)1096-987X(199709)18:12<1463::AID-JCC4>3.0.CO;2-H}
 
 \bibitem{essmann:1995}
@@ -313,11 +306,5 @@ P.~Wiersema, A.~Loeb, J.~T.~G. Overbeek, Calculation of the electrophoretic
 R.~W. O'Brien, L.~R. White, Electrophoretic mobility of a spherical colloidal
   particle, Journal of the Chemical Society, Faraday Transactions 2: Molecular
   and Chemical Physics 74 (1978) 1607--1626.
-
-\bibitem{valentine:2007}
-D.~L. Valentine, \href{http://dx.doi.org/10.1038/nrmicro1619}{Adaptations to
-  energy stress dictate the ecology and evolution of the archaea}, Nat Rev
-  Micro 5~(4) (2007) 316--323.
-\newline\urlprefix\url{http://dx.doi.org/10.1038/nrmicro1619}
 
 \end{thebibliography}

@@ -8,7 +8,11 @@
 \usepackage[utf8]{inputenc}
 \usepackage{flafter}
 \usepackage{floatrow}
+\usepackage{float}
+\floatstyle{plaintop}
+\restylefloat{table}
 %\usepackage{floatflt}
+
 \usepackage{placeins}
 \usepackage{siunitx}
 \usepackage{graphicx}
@@ -44,7 +48,7 @@
 {0.2ex} % sep
 {
 } % before-code
-\titlespacing*{\chapter}{0pt}{1in}{0.25in}
+\titlespacing*{\chapter}{0pt}{0.5in}{0.25in}
 \titlespacing*{\section}{0pt}{0pt}{0pt}
 \hbadness=99999
 %\epstopdfDeclareGraphicsRule{.tga}{png}{.png}{
@@ -57,6 +61,18 @@
     linkcolor=black,
     urlcolor=black
 }
+\usepackage[titles]{tocloft}
+\setlength\cftbeforechapskip{\baselineskip}
+\setlength\cftbeforefigskip{\baselineskip}
+\setlength\cftbeforetabskip{\baselineskip}
+\setlength\cftfigindent{0in}
+\setlength\cfttabindent{0in}
+\makeatletter
+\setlength{\@fptop}{0pt}
+\makeatother
+\usepackage{url}
+\urlstyle{same}
+
 %\newcommand{\cmpersec}{$\frac{\text{cm}}{\text{s}}$~}
 \newcommand{\cmpersec}{cm/s~}
 \newcommand{\etal}{\textit{et al.}}
@@ -80,39 +96,65 @@
     \setcounter{figure}{0}
     \renewcommand{\thefigure}{S\arabic{figure}}%
 }
+\renewcommand{\bibname}{References}
+\titleformat{\chapter}
+{\normalfont\normalsize\bfseries\centering}{\thechapter}{1em}{}
+\titleformat{\section}
+{\normalfont\normalsize\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+{\normalfont\normalsize\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+{\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+\titleformat{\paragraph}[runin]
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titleformat{\subparagraph}[runin]
+{\normalfont\normalsize\bfseries}{\thesubparagraph}{1em}{}
+%\cftsetpnumwidth{0.5in}
+%\setlength{\cftbeforefigskip}{-\baselineskip}
+%\setlength{\cftbeforetabskip}{-\baselineskip}
+\cftsetpnumwidth{0.5in}
+\cftsetrmarg{0.5in}
+\renewcommand{\cftdot}{}
+\renewcommand{\cftchapfont}{\normalsize}
+\renewcommand{\cftchappagefont}{\normalsize}
 
 \author{Matthew Saunders}
 \title{Modeling Interactions of Ions with Ether- and Ester-linked Phospholipids}
 \begin{document}
+
 \pagestyle{plain}
 %\maketitle
 \begin{titlepage}
 \begin{centering}
+
 ~\\[1in]
-Modeling of Interaction of Ions \\[2\baselineskip] with Ether- and Ester-linked phospholipids
+Modeling of Interaction of Ions with Ether- and Ester-linked phospholipids
 ~\\[3\baselineskip]
 by
 ~\\[3\baselineskip]
 Matthew W. Saunders
 ~\\[4\baselineskip]
 A thesis submitted in partial fufillment\\
-of the requirements of the degree of\\
+of the requirements for the degree of\\
 Master of Science in Biology \\ with a concentration in Cell \& Molecular Biology\\
 Department of Cell Biology, Microbiology and Molecular Biology\\
 College of Arts and Sciences\\
-University of South Florida\\
+University of South Florida
 ~\\[2\baselineskip]
-Major Professor: Sameer Varma, Ph.D.\\
-Sagar Pandit, Ph.D.\\
+Co-Major Professor: Sameer Varma, Ph.D.\\
+Co-Major Professor: Sagar Pandit, Ph.D.\\
 H. Lee Woodcock, Ph.D.\\
-Jianjun Pan, Ph.D.\\
+Jianjun Pan, Ph.D.
 ~\\[2\baselineskip]
-%Date of Approval:\\
-%XXX\\
+Date of Approval:~\\
+October 23\textsuperscript{rd}, 2019
 ~\\[3\baselineskip]
+Keywords: Molecular Dynamics, Gouy-Chapman Theory\\
+~\\
+Copyright \textsuperscript\textcopyright~2019, Matthew W. Saunders\\
+
 \end{centering}
 \end{titlepage}
-\doublespacing
 \tableofcontents
 \pagenumbering{roman}
 \listoftables
@@ -123,15 +165,16 @@ Jianjun Pan, Ph.D.\\
 \chapter*{Abstract}
 \addcontentsline{toc}{chapter}{Abstract}
 
-Polar lipids, or phospholipids, are present in all parts of cells
+Phospholipids are present in all parts of cells
 and are used in many signalling and structural roles.
-As structural molecules they act as the main component of cellular plasma membranes --- bilayers
-of polar lipids that separate cells from their environments. Bilayer properties are heavily
+As structural molecules they act as the main component of cellular membranes. 
+Bilayer properties are heavily
 influenced by the structure of their component polar lipids, and different lipids
 are found in different organisms. 
 A distinguishing feature of Archaeal plasma membranes is that their phospholipids contain ether-links, as opposed to bacterial and eukaryotic plasma
 membranes where phospholipids primarily contain ester-links. In our work we examine the effects of
-salt on bilayer structure in the case of an ether-linked lipid bilayer. We use molecular dynamics simulations and compare equilibrium properties of two model lipid
+salt on bilayer structure in the case of both ester- and ether-linked lipid bilayers. 
+We use molecular dynamics simulations and compare equilibrium properties of two model lipid
 bilayers in NaCl salt solution --- POPC and its ether-linked analog that we refer to as HOPC. We make the following key observations.
 The headgroup region of HOPC~``adsorbs'' fewer ions compared to the headgroup region of POPC. Consistent with this,
 we note that the Debye screening length in the HOPC system is \about 10\% shorter than that
@@ -147,10 +190,12 @@ region of tightly coordinated waters in the HOPC system that has a lower density
 Based on these observations we conclude that an ether-linked lipid bilayer has a lower binding
 affinity for Na$^+$ compared to an ester-linked lipid bilayer.
 
-\chapter{Introduction}
-\linenumbers
+\chapter[Introduction]{Introduction\footnote{
+    Portions of this chapter have been previously published in \emph{Biochimica et Biophysica Acta (BBA) - Biomembranes} Volume 1861, Issue 5, 1 May 2019, Pages 907-915,
+    and have been reproduced with permission from Elsevier\cite{saunders:2019}.
+}}
+%\linenumbers
 \pagenumbering{arabic}
-
 \section{Ether- and Ester-linked Phospholipids}
 Phospholipids are a diverse species of biological molecules used in many roles in life~\cite{van:2008:lipidvariety}. These molecules
 are amphipathic, with a headgroup that is hydrophillic attached to hydrophobic acyl chains by a
@@ -164,25 +209,25 @@ Phospholipids tend to form bilayers,
 where the hydrophillic headgroups face the solvent and the 
 hydrophobic acyl chains face into the center 
 of the structure~\cite{israelachvili:2011:intermol,ashrafuzzaman:2012:membrane}. 
-An image of a bilayer of a commonly studied
-model lipid can be seen
-in figure~\ref{fig:boximage}.
-\begin{figure}[htp]
-    \caption[Image of a model bilayer of phospholipids from a simulation.]{ Image of a model bilayer of phospholipids from a simulation. The lipids can be seen
-in the center of the image, with the hydrophobic chains colored in
-light purple. The polar headgroup can be seen highlighted by the phosphate group in orange and the choline nitrogen in blue
-facing the solvent. Solvent molecules have been removed for clarity. Figure generated
-using VMD~\cite{vmd}}
-\label{fig:boximage}
-\includegraphics[height=0.25\textheight]{images/popc_image}
-\end{figure}
-In living cells, lipid bilayers act as the delimiter between the cell and the environment, acting as one of the major constituents of the cellular 
+%An image of a bilayer of a commonly studied
+%model lipid can be seen
+%in figure~\ref{fig:boximage}.
+%\begin{figure}[htp]
+%    \caption[Image of a model bilayer of phospholipids from a simulation.]{ Image of a model bilayer of phospholipids from a simulation. The lipids can be seen
+%in the center of the image, with the hydrophobic chains colored in
+%light purple. The polar headgroup can be seen highlighted by the phosphate group in orange and the choline nitrogen in blue
+%facing the solvent. Solvent molecules have been removed for clarity. Figure generated
+%using VMD~\cite{vmd}}
+%\label{fig:boximage}
+%\includegraphics[height=0.25\textheight]{images/popc_image}
+%\end{figure}
+In living cells, lipid bilayers help to delimit the cell and the environment, acting as one of the major constituents of the cellular 
 plasma membrane~\cite{reece:2014:biobook}. The plasma membrane consists of a mixture of many lipid species, as
 well as proteins and lipid-like molecules, and the mixture is tuned by the cell to adapt the 
 structure and flexibility of the plasma membrane to different environments~\cite{pandit:2008:simulationtextbook,van:2008:lipidvariety,zhang:2008:memhomeo}. 
 Furthermore, the cellular membrane is the interface for exchange
 of nutrients with the environment, and also the interface for the transmission of signals to and from the outside of the cell. This
-exchange is done through passive diffusion, proteins and other molecules embedded into the membrane, and through the formation
+exchange is done through passive diffusion, proteins, and other molecules embedded into the membrane, and through the formation
 of vesicles and buds out of the lipid bilayer~\cite{reece:2014:biobook}. The behavior and function of the plasma membrane
 is heavily dependent on the structure of the bilayer, which again can be influenced directly by the mixture of phospholipids constituting the
 membrane~\cite{van:2008:lipidvariety,zhang:2008:memhomeo}.
@@ -198,7 +243,7 @@ temperature~\cite{ashrafuzzaman:2012:membrane,zhang:2008:memhomeo}.
 
 Phospholipids can also use several types of chemical links between the glycerol
 backbone and the fatty acid chains~\cite{sehgal:1962, koga:2014}.
-Phospholipids containing ether-links represent one of the many major evolutionary divides -- 
+Phospholipids containing ether-links represent one of the many major evolutionary divides --- 
 while they make up much of the phospholipids of archaeal membranes,
  they are present in only small fractions in eukarya and bacteria~\cite{sehgal:1962, koga:2014, kates:1993:archealipids}. 
 These phospholipids differ from the more common ester-linked phospholipids of bacterial and 
@@ -212,7 +257,7 @@ between ether- and ester-links. POPC (1-palmitoyl-2-oleoyl-sn-glycero-3-phosphat
 diester lipid and HOPC (1-hexadecyl-2-(9-octadecenyl)-sn-glycero-3-phosphatidylcholine) is its diether analog that lacks fatty acid carbonyl groups.
 }
 \label{fig:struc}
-\includegraphics[height=0.5\textheight]{images/Structure_annotated}
+\includegraphics[height=0.8\textheight]{images/Structure_annotated}
 \end{figure}
 
 The chemical difference between ester- and ether-linked lipids has been shown to influence 
@@ -226,8 +271,14 @@ that ether-linked lipid bilayers are less permeable to water compared to bilayer
 analogs~\cite{jansen:1995, guler:2009}. 
 
 Nevertheless, all studies aimed at examining differences between ester- and ether-linked lipid bilayers have been carried out in pure water, except for the one recent study by 
-Leonard \etal~\cite{leonard:2018}. As such, several studies show that salt significantly 
-affects the properties of ester-linked lipid bilayers~\cite{kruczek:2019,kruczek:2017, duro:2016,pabst:2007,sachs:2004,petrache:2006:swelling}. 
+Leonard \etal where an all-atom force field was parameterized for a different model ether-linked lipid~\cite{leonard:2018}. In the work by Leonard \etal, the primary analysis
+given was for systems without salt, and did not treat the system with salt beyond structural measurements~\cite{leonard:2018}. The questions of how ions bind differenty to 
+bilayers of ether- and ester-linked lipids as well as how they interact with the bilayers electrostatically are still open to investigation. The inclusion of
+ions in a bilayer system is an important step to acheiving a more phisiologically relevant system --- biological membranes are always exposed to ions~\cite{reece:2014:biobook}. 
+In biology, the affects of ions on bilayer structure cannot be ignored.
+%TODO Keep adding things here I think it needs more %%
+As such, several studies show that salt significantly 
+affects the properties of ester-linked lipid bilayers~\cite{kruczek:2019,kruczek:2017,duro:2016,pabst:2007,sachs:2004,petrache:2006:swelling,leonard:2018}. 
 For example, in our previous works on the interactions of monovalent and divalent ions on zwitterionic ester-linked lipid bilayers~\cite{kruczek:2019,kruczek:2017}
 we found that monovalent cations insert into headgroup region. 
 We reported reduction in area per lipid, increase in  bilayer thickness, increased range of ordered solvent at the bilayer surface, and an increase in
@@ -294,7 +345,7 @@ as beads rather than explicitly defining hydrogens~\cite{raghavan:1992,marrink:1
 values for bilayer structure, such as area per lipid and bilayer thickness that are taken from SAXS and SANS measurements. 
 Later development of force-fields included calculating partial charges
 for different parts of the lipid molecules using \emph{ab initio} quantum calculations~\cite{chiu:1995:incorporation,marrink:1993}. Chiu \etal
-calculated charges in this way for the GROMOS force-field of DPPC in 1995~\cite{chiu:1995:incorporation}.
+calculated charges in this way for the GROMOS 43-A1 force-field of DPPC in 1995~\cite{chiu:1995:incorporation}.
 
 Berger \etal sought to further improve the densities given by the GROMOS force-field in 1997 
 by optimizing VdW parameters using molecular volumes and
@@ -304,12 +355,15 @@ Later, further optimization was carried out by Chiu \etal
 in 2009 to improve torsional and VdW parameters using experimental 
 heats of vaporization and densities, and validated
 the overall result by predicting small-angle x-ray scattering 
-results for model lipid bilayers to create the GROMOS 43-A1S3 lipid force field which gave excellent reproduction of SAXS form-factors for
-different lipids~\cite{chiu:2009}.
+results for model lipid bilayers to create the GROMOS 43-A1S3 lipid force field that we use for this work, which gave excellent reproduction of SAXS form-factors for
+different lipids~\cite{chiu:2009}. Parameters for the ether-links were added to the force-field by Kruczek \etal in 2017~\cite{kruczek:2017}, and the force-field
+was demonstrated to work well with ion parameters from Joung and Cheatham III~\cite{joung:2008} by reproucing ion binding constants in the same
+year~\cite{kruczek:2017}.
 
-Molecular dynamics can give this resolution while still reproducing the large-scale properties of the system as a whole~\cite{pandit:2008:simulationtextbook,dror:2012:biomicroscope}. 
-Properties of the lipid bilayer can be expressed directly in terms of the positions or dynamics of atoms, 
-providing additional understanding of these systems.
+
+%Molecular dynamics can give this resolution while still reproducing the large-scale properties of the system as a whole~\cite{pandit:2008:simulationtextbook,dror:2012:biomicroscope}. 
+%Properties of the lipid bilayer can be expressed directly in terms of the positions or dynamics of atoms, 
+%providing additional understanding of these systems.
 
 %There are many computational methods and models available to do simulations of systems of particles. In general, models
 %must strike a balance between computational efficiency and accuracy of results; 
@@ -339,7 +393,10 @@ providing additional understanding of these systems.
 %for two particles~$i$~and~$j$. This potential is used only for short range interactions --- long range electrostatics
 %are computed using the particle-mesh Ewald method~\cite{gromacsmanual,pme:1995}.
 
-\chapter{Interaction of salt with ether- and ester-linked phospholipid bilayers}
+\chapter[Interaction of salt with ether- and ester-linked phospholipid bilayers]{Interaction of salt with ether- and ester-linked phospholipid bilayers\footnote{
+    Portions of this chapter have been previously published in \emph{Biochimica et Biophysica Acta (BBA) - Biomembranes} Volume 1861, Issue 5, 1 May 2019, Pages 907-915,
+    and have been reproduced with permission from Elsevier\cite{saunders:2019}.
+}}
 In this work we seek to answer the general questions of how salt inte\-racts 
 with ether-linked lipid bilayers, and how ether-linked lipid bilayers differ from ester-linked lipid bilayers in the presence of salt.
 We addressed these questions by carrying out a molecular dynamics simulation of 
@@ -407,7 +464,7 @@ The plot for HOPC shows a peak in the water density inside the headgroup region 
 similar to what was seen in our previous work with DHPC~\cite{kruczek:2017:ether}. 
 }
 \label{fig:massdens}
-\includegraphics[width=	0.7\textwidth]{dens_3component.eps}
+\includegraphics[width=	0.85\textwidth]{dens_3component.eps}
 \end{figure}
 We find that the headgroup region of 
 HOPC has a higher density of solvent compared to POPC -- this is visible as 
@@ -420,7 +477,7 @@ and may be a direct result of the ether-linked lipids~\cite{kruczek:2017:ether}.
 
 Table~\ref{tab:struc} compares the structural properties of HOPC and POPC bilayers. 
 Lipid volumes $V_l = V_c + V_{hg}$, where $V_c$ and $V_{hg}$ are 
-\begin{table}
+\begin{table}[t]
     \caption[Comparison of HOPC and POPC bilayer structure properties.]{ 
 Comparison of HOPC and POPC bilayer structure properties: $V_l$ is the lipid
 volume; $V_c$ and $V_h$ are the partial volumes of lipids chains and headgroups,
@@ -486,8 +543,9 @@ dividing the system into 2000 slices. This data was calculated for every five
 nanoseconds, and averaged over the last 150ns of trajectories. Errorbars are shown for every 10th data point.
 }
 \label{fig:eledens}
-\includegraphics[width=	0.7\textwidth]{ele_scattering_density.eps}
+\includegraphics[height = 0.5\textheight]{ele_scattering_density.eps}
 \end{figure}
+
 Electron density distributions are experimentally measured using x-ray scattering, by taking the reverse-fourier transform of
 the scattering form-factor~\cite{fogarty:2015,nagle:2000,pandit:2008:simulationtextbook}. Since the experimental x-ray scattering is dependent on the model used to
 compute the reverse-transform, we often calculate the form-factor of our simulated bilayer to compare to experiment by transforming the
@@ -562,7 +620,7 @@ inset shows the distribution of ions in the transitional region from the bilayer
 looks further out from the bilayer, the density of \na and \cl equalize, as is expected in bulk solvent. 
 }
 \label{fig:numberdens}
-\includegraphics[width=	0.5\textwidth]{density.eps}
+\includegraphics[width=	0.7\textwidth]{density.eps}
 \end{figure}
 phosphates and \cl ions near cholines. Here we note that ion peaks are positioned similarly in both HOPC and 
 POPC systems. \cl ions do not enter the bilayer headgroup region, while \na ions move far into this region
@@ -682,8 +740,7 @@ negative; and the remaining portion beyond $B_{-2}$ we refer to as bulk.
 These regions are also labeled in figure~\ref{fig:h2order}. The diffusion coefficients for waters 
 in these regions are included in table~\ref{tab:diff}. They are calculated using Einstein's relationship, and a 
 \begin{table}[t]
-\caption[Diffusion coefficients of water measured in $\text{nm}^2/\text{s}$ in different regions along the bilayer normal (see figure~\ref{fig:h2order} 
-and related text for the definitions of the different spatial regions.]{
+\caption[Diffusion coefficients of water measured in $\text{nm}^2/\text{s}$ in different regions along the bilayer normal.]{
 Diffusion coefficients of water measured in $\text{nm}^2/\text{s}$ in different regions along the bilayer normal (see figure~\ref{fig:h2order} 
 and related text for the definitions of the different spatial regions.
 The two innermost-bilayer regions $B_{-1}$ and $B_+$ in HOPC contain waters that have a greatly lowered diffusion coefficient. In the regions $B_{-2}$ and bulk, 
@@ -803,7 +860,7 @@ may serve as a trap for solvent molecules. In fact, the spatial location of the 
 
 %\section{Simplified Model of the Interface; Gouy-Chapman Theory}
 \subsection{Salt distribution at the bilayer-solvent interface}
-
+\vspace{-0.3cm}
 The behavior of salt near bilayer surfaces is often modeled using Gouy-Chapman theory; 
 a mean-field approximation that has its roots in Poisson-Boltzman theory~\cite{israelachvili:2011:intermol,wiersema:1966}. 
 This theory also forms the basis for electrophoretic mobility studies~\cite{wiersema:1966,o:1978:electrophoretic}. 
@@ -824,7 +881,7 @@ where $\rho_0$ is the ion density in the bulk, $\bar z$ is the valency of the io
 on an electron, and $\psi(z)$ is the electrostatic potential. We define the interfaces as the 
 \emph{hydration boundaries} (see subsection~\ref{sec:waterstruc} `Water structure and dynamics'). The lengths of the solvent 
 occupied regions, $D$, in each of the two systems are listed in table~\ref{tab:gctheory}. We set the center 
-\begin{table}
+\begin{table}[t]
     \caption[Parameters in Gouy-Chapman theory.]{ 
 Parameters in Gouy-Chapman theory. 
 $K$ was calculated using equation~\ref{eq:debyelength}. This was done using the value for $\rho_0$  
@@ -900,15 +957,18 @@ shorter screening length for the system. This means that a bilayer of HOPC is be
 The shorter screening length in the HOPC is also reflective of the smaller 
 number of ions that adsorb onto the surface of the bilayer, as this directly results in a larger number density in bulk solvent due to the fixed number of ions in our system.
 
-\chapter{Conclusions}
+\chapter{Conclusion}
+%\section{Conclusions}
 Phospholipids are an important part of all living things, acting as the major constituent of cellular plasma membranes. 
 The great variety of phospholipid species allows organisms another parameter
 to fine-tune the behavior and structure of their membranes in order to adapt to a wide range of different
-environments~\cite{van:2008:lipidvariety}.
-Ether-linked lipids are a major distinguishing feature of archael membranes, have been suggested in the past to be an adaptation to archaeal membranes to tune
-flexibility and permeability of their membranes to extreme environments~\cite{koga:2014,valentine:2007}.
+environments~\cite{van:2008:lipidvariety}. This tunability makes lipid bilayers interesting to study, as small changes in 
+lipid structure can result in large changes in the overall bilayer structure~\cite{pandit:2008:simulationtextbook}.
+Classical molecular dynamics simulations are well suited to studying lipid bilayers~\cite{pandit:2008:simulationtextbook}, and have been used extensively
+to study these systems over the last 25 years.
 
-In our work, we have found that ether-linked lipid bilayers show a distinct peak in solvent density
+In our work, we have sought to model the interactions between dissolved ions and model ether- and ester-linked lipid bilayers.
+We found that ether-linked lipid bilayers show a distinct peak in solvent density
 that is not disrupted by the inclusion of a moderate concentration of salt. This region
 shows significantly reduced lateral diffusion, and longer autocorrelation times than the same
 region in an analogous ester-linked lipid bilayer. Furthermore, we find that
